@@ -1,0 +1,126 @@
+/* ------------------------------------------------------------------------- */
+// Master layout
+/* ------------------------------------------------------------------------- */
+// Layout container
+.layout-container {
+  min-height: 100vh;
+  &.closed-sidebar {
+    .logo-container {
+      padding: 9px;
+      .img-logo {
+        width: 40px;
+      }
+      .btn-menu {
+        left: 50%;
+        right: unset;
+      }
+    }
+    .wrapper-content-right {
+      margin-left: 60px;
+    }
+    .fixed-header {
+      width: calc(100% - 60px);
+    }
+    .list-menu-sidebar {
+      width: 60px !important;
+    }
+  }
+}
+// Logo container
+.logo-container {
+  background-color: #0B3D91;
+  height: 60px;
+  position: relative;
+  @include inline-flex();
+  @include align-items(center);
+  width: 100%;
+  padding-left: 24px;
+  .title {
+    font-family: 'UTMAvo';
+    font-size: 10px;
+    color: $color-white;
+    width: 140px;
+    margin-left: 10px;
+  }
+  .img-logo {
+    width: 40px;
+  }
+  .btn-menu {
+    position: absolute;
+    right: 15px;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    color: $color-white;
+    cursor: pointer;
+  }
+}
+// Content trong master layout
+.wrapper-content-right {
+  margin-left: 260px;
+  width: 100%;
+  margin-top: 60px;
+  min-height: calc(100vh - 60px);
+  transition: all 0.2s ease-in-out;
+  .container-content {
+    margin-top: auto;
+  }
+}
+
+/* ------------------------------------------------------------------------- */
+// Containter
+/* ------------------------------------------------------------------------- */
+// Container heading
+.container-heading {
+  margin-bottom: 20px;
+  border-top: 2px solid $color-border;
+  .heading-page {
+    background-color: $bg-body;
+    .ant-page-header {
+      padding: 15px 24px;
+    }
+    .ant-page-header-heading-title {
+      font-size: 20px;
+    }
+  }
+}
+// Heading tab
+.heading-tab {
+  width: 100%;
+  padding: 5px 15px;
+  background-color: #fff;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.07);
+  .heading-tab-item {
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px;
+    .name {
+      font-size: 14px;
+      color: rgba(0, 0, 0, 0.5);
+      line-height: 19px;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+    &.active {
+      .name,
+      .icon:before {
+        color: $color-primary;
+      }
+      .icon-antd {
+        color: $color-primary;
+      }
+    }
+  }
+  .heading-tab-seperator {
+    display: inline-block;
+    vertical-align: middle;
+    border-top: 1px dashed #979797;
+    width: 40px;
+    margin: 10px;
+  }
+}
+// Content trong container
+.content-wrapper {
+  margin: 20px 20px;
+  z-index: 3;
+  @include roundedCorners(3);
+}

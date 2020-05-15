@@ -1,0 +1,75 @@
+/* -------- Trang chủ style responsive -------- */
+/* ------------------------------------------------------------------------- */
+// THÔNG BÁO SẢN PHẨM QUẢNG CÁO
+/* ------------------------------------------------------------------------- */
+@include breakpoint($grid-breakpoints-sm) {
+  // Style phần banner của trang thông tin
+  .trangthongtin-page {
+    .banner {
+      padding: 0 30px !important;
+      .banner-info {
+        padding-bottom: 50px;
+        .title {
+          font-size: 30px !important;
+        }
+      }
+    }
+    // Style phần content của trang banner
+    .main-content {
+      padding: 30px !important;
+      .info-block {
+        padding: 30px 0 20px 0;
+      }
+    }
+  }
+  // Style cho cho trang hướng dẫn sử dụng
+  .huongdansudung-page {
+    padding: 30px;
+  }
+}
+@include breakpoint($grid-breakpoints-lg) {
+  // Style phần banner của trang thông tin
+  .trangthongtin-page {
+    .banner {
+      .banner-info {
+        width: 100%;
+      }
+      .banner-image {
+        display: none;
+      }
+    }
+    // Style phần content của trang banner
+    .main-content {
+      .info-block {
+        width: 100%;
+        padding-right: 0 !important;
+      }
+    }
+  }
+}
+@include breakpoint($grid-breakpoints-xl) {
+  // Style phần banner của trang thông tin
+  .trangthongtin-page {
+    .banner {
+      .banner-info {
+        .title {
+          margin-top: 40px;
+          font-size: 35px;
+        }
+      }
+      .banner-image {
+        width: 550px;
+      }
+    }
+  }
+}
+@include breakpoint($grid-breakpoints-mlg) {
+  // Style phần banner của trang thông tin
+  .trangthongtin-page {
+    .banner {
+      .banner-image {
+        width: 450px;
+      }
+    }
+  }
+}

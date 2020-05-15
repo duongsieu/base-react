@@ -1,0 +1,8 @@
+/* -------- Sidebar style responsive -------- */
+@include breakpoint($grid-breakpoints-sm) {
+  .logo-container {
+    .title {
+      width: 100%;
+    }
+  }
+}

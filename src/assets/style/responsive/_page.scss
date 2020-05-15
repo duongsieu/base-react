@@ -1,0 +1,41 @@
+@include breakpoint($grid-breakpoints-sm) {
+  .baocaotiendotheothang-page {
+    .b-search-wrapper {
+      .footer-wrapper {
+        text-align: left;
+        .ant-btn {
+          display: block;
+          margin:10px 0;
+          width: 100%;
+        }
+      }
+    }
+    .heading-search {
+      .ant-btn {
+        display: block;
+        margin:10px 0;
+        width: 100%;
+      }
+    }
+  }
+  // Trang mẫu văn bảng thông báo
+  .mauvanban-page {
+    .main-content {
+      padding: 0 50px !important;
+      .info-block {
+        padding: 30px 0 20px;
+      }
+    }
+  }
+}
+@include breakpoint($grid-breakpoints-lg) {
+  // Trang mẫu văn bảng thông báo
+  .mauvanban-page {
+    .main-content {
+      .info-block {
+        width: 100%;
+        padding-right: 0 !important;
+      }
+    }
+  }
+}

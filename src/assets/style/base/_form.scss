@@ -1,0 +1,227 @@
+/* -------- Style form -------- */
+.form-container {
+  &.form-content {
+    padding: 10px 5px 10px 20px;
+  }
+}
+.form-item {
+  font-family: $font-family;
+  font-weight: bold;
+  font-size: 14px;
+  color: $color-label;
+  text-align: left;
+  line-height: 1.4;
+  margin-bottom: 10px;
+  .ant-select-selection {
+    font-weight: normal;
+  }
+  .form-item-span {
+    font-size: 14px;
+    color: $color-label;
+  }
+  .ant-form-item-required {
+    &::before{
+      content: none;
+    }
+    &::after{
+      display: inline-block;
+      margin-right: 0;
+      margin-left: 4px;
+      color: $color-required;
+      font-size: 14px;
+      line-height: 1;
+      content: '*' !important;
+    }
+  }
+  @include breakpoint($grid-breakpoints-md) {
+    &.form-item-label-empty {
+      .ant-form-item-label {
+        display: none;
+      }
+    }
+  }
+  &.form-item-not-label {
+    margin-bottom: 15px;
+  }
+}
+
+.footer-form {
+  @include flexbox();
+  @include align-items(center);
+  @include justify-content(center);
+  border-top: 1px solid $color-border-box;
+  padding: 20px 15px 20px 15px;
+  background-color: $color-white;
+  @include flex-wrap(wrap);
+
+  .ant-btn-loading {
+    @include inline-flex();
+    @include align-items(center);
+    @include justify-content(center);
+
+    .anticon-loading {
+      margin: 0 10px 0 0;
+    }
+  }
+}
+
+.form-action {
+  @include flexbox();
+  @include align-items(center);
+  @include justify-content(center);
+  border-top: 1px solid $color-border-box;
+  border-bottom: 1px solid $color-border-box;
+  padding: 10px 20px 0;
+  background-color: $color-white;
+  margin-bottom: -1px;
+  @include flex-wrap(wrap);
+  .ant-btn-loading {
+    @include inline-flex();
+    @include align-items(center);
+    @include justify-content(center);
+    .anticon-loading {
+      margin: 0 10px 0 0;
+    }
+  }
+}
+.btn-group {
+  margin: 0 -5px;
+  .btn-common {
+    padding: 0 5px;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+}
+
+.ant-form-item-label {
+  line-height: 30px;
+}
+
+.ant-form-item-label label,
+.form-item-span {
+  font-family: $font-family;
+  font-weight: 500;
+  font-size: 14px;
+  color: $color-label;
+  text-align: left;
+  line-height: 1.4 !important;
+  &.has-form-item-span {
+    font-weight: normal;
+  }
+}
+
+.form-value-label {
+  display: inline-block;
+  margin-top: 5px;
+  font-family: $font-family;
+  font-weight: 700;
+  font-size: 14px;
+  color: $color-label;
+  text-align: left;
+  line-height: 1.4;
+  &.label-required:after{
+    display: inline-block;
+    margin-right: 0;
+    margin-left: 4px;
+    color: #d5313d;
+    font-size: 14px;
+    line-height: 1;
+    content: '*';
+  }
+}
+.form-value-item {
+  display: block;
+}
+.color-required {
+  color: $color-required
+}
+.color-orange {
+  color: $color-orange;
+}
+.color-green {
+  color: $color-green;
+}
+.color-primary {
+  color: $color-primary
+}
+.form-item-no-label {
+  .ant-form-item-label {
+    opacity: 0;
+  }
+}
+.ant-input {
+  padding: 5px 11px;
+  height: 36px;
+}
+.ant-form-explain {
+  font-weight: 400;
+  padding-top: 10px;
+  white-space: pre-line;
+}
+.input-large {
+  width: 400px;
+}
+.select-medium {
+  width: 230px;
+}
+.select-small {
+  width: 155px;
+}
+.form-group {
+  .heading2 {
+    padding: 10px 20px;
+    border-bottom: 1px solid #F4F6F8;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+  .form-group-content {
+    padding: 10px 20px;
+    border-bottom: 1px solid #F4F6F8;
+  }
+  &:last-child {
+    .form-group-content {
+      border-bottom: 0;
+    }
+  }
+  &:not(:first-child) {
+    .heading2 {
+      border-top: 1px solid #D1D5D7;
+    }
+  }
+}
+// Các page là form thêm mới/chỉnh sửa
+.form-page {
+  .b-normal-wrapper {
+    .body-wrapper {
+      padding: 15px 20px 10px;
+    }
+  }
+}
+// Các page là form thêm mới/chỉnh sửa
+/*
+  .table-page {
+    .b-normal-wrapper {
+      .body-wrapper {
+        padding: 0;
+      }
+    }
+  }
+*/
+// Danh sách input trong form
+.form-wrapper-list {
+  .b-table-footer {
+    border: 1px solid #d9d9d9;
+    border-top: 0;
+  }
+  .ant-empty {
+    padding: 0;
+  }
+  .ant-empty-normal {
+    margin: 0;
+  }
+}
+// Input suffix
+.ant-input-affix-wrapper .ant-input-suffix {
+  font-weight: 400;
+  color: rgb(197, 193, 210);
+}

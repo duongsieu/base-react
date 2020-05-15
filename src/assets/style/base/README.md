@@ -1,0 +1,1 @@
+Thư mục chứa style basic trong application

@@ -1,0 +1,91 @@
+/* -------- Style custom Antd -------- */
+// Empty
+.ant-empty {
+  padding: 20px;
+}
+.notifi-success {
+  background-color: $bg-notifi-success;
+  .ant-notification-notice-message {
+    font-family: $font-family;
+    font-weight: bold;
+    color: $color-notifi-success;
+  }
+  .ant-notification-notice-description {
+    color: $color-notifi-success;
+  }
+  .ant-notification-notice-close {
+    color: $color-notifi-success;
+  }
+}
+// Notification
+.notifi-warning {
+  background-color: $bg-notifi-warning;
+  .ant-notification-notice-message {
+    font-family: $font-family;
+    font-weight: bold;
+    color: $color-notifi-warning;
+  }
+  .ant-notification-notice-description {
+    color: $color-notifi-warning;
+  }
+  .ant-notification-notice-close {
+    color: $color-notifi-warning;
+  }
+}
+.notifi-error {
+  background-color: $bg-notifi-error;
+  .ant-notification-notice-message {
+    font-family: $font-family;
+    font-weight: bold;
+    color: $color-notifi-error;
+  }
+  .ant-notification-notice-description {
+    color: $color-notifi-error;
+  }
+  .ant-notification-notice-close {
+    color: $color-notifi-error;
+  }
+}
+// Checkbox
+.ant-checkbox-wrapper {
+  font-weight: 400;
+}
+.ant-table-tbody {
+  .ant-checkbox-checked .ant-checkbox-inner::after {
+    margin-left: 0.5px;
+  }
+}
+.ant-checkbox-inner {
+  width: 20px;
+  height: 20px;
+  position: unset;
+  &:after {
+    left: 27%;
+  }
+}
+.ant-table-tbody {
+  .ant-checkbox-checked .ant-checkbox-inner::after {
+    margin-left: 0px;
+  }
+}
+.ant-checkbox-checked .ant-checkbox-inner::after {
+  margin-top: -1px;
+}
+// Search input
+.ant-input-search {
+  &.ant-input-affix-wrapper {
+    text-align: left;
+  }
+}
+// Select
+// Hiển thị xuống hàng khi label dài
+.ant-select-dropdown-menu-item {
+  white-space: normal;
+  text-overflow: initial;
+}
+// TreeSelect & Select
+.ant-select-selection--multiple {
+  max-height: 100px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}

@@ -1,0 +1,257 @@
+/* -------- Style about header -------- */
+.header-container {
+  background-color: $bg-body;
+  // box-shadow: 0 6px 16px 0 rgba(0,0,0,0.06);
+  z-index: 5;
+  height: 60px;
+  padding: 0 20px;
+  line-height: 0px;
+  @include inline-flex();
+  @include align-items(center);
+  transition: all 0.1s ease-in-out;
+  &.fixed-header {
+    position: fixed;
+    width: calc(100% - 260px);
+    top: 0;
+    right: 0;
+    @include breakpoint($grid-breakpoints-mlg) {
+      width: calc(100% - 60px);
+    }
+    @include breakpoint($grid-breakpoints-sm) {
+      width: 100%;
+    }
+  }
+  .header-right {
+    color: $color-white;
+    @include inline-flex();
+    @include align-items(center);
+    height: 100%;
+    width: 100%;
+    @include justify-content(flex-end);
+    .name-user {
+      font-size: 14px;
+      margin-left: 10px;
+      margin-right: 5px;
+      margin-bottom: 0;
+      cursor: pointer;
+      color: $color-black;
+      display: inline-block;
+      vertical-align: middle;
+      font-weight: normal;
+      max-width: 200px;
+    }
+    i {
+      font-size: 10px;
+      cursor: pointer;
+    }
+    .avatar-box {
+      max-width: 300px;
+    }
+    .popover-header {
+      display: inline-block;
+    }
+    .ant-avatar > img {
+      height: 100%;
+    }
+  }
+  .header-left {
+    @include inline-flex();
+    @include align-items(center);
+    height: 100%;
+    width: 100%;
+  }
+  .title {
+    padding-left: 30px;
+    display: inline;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'UTMAvo';
+    color: #1D4D9D;
+  }
+  .btn-menu {
+    color: $color-black;
+    &.icon-menu {
+      &::before {
+        color: $color-black;
+      }
+    }
+    font-size: 18px;
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+}
+
+#showPopover {
+  .ant-popover-inner-content {
+    width: 200px;
+    padding: 12px 0;
+    div {
+      padding: 10px 15px 10px 15px;
+      border-bottom: 1px solid $bg-table;
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+    .name-role {
+      font-size: 12px;
+      color: #292A2D;
+      letter-spacing: 0;
+      line-height: 17px;
+      background-color: $bg-gray;
+      position: relative;
+      cursor: pointer;
+      padding: 10px 15px;
+      .icon-left {
+        position: absolute;
+        left: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      .name {
+        margin-left: 20px;
+        display: inline-block;
+        width: 140px;
+      }
+      .icon-right {
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      &:hover {
+        background-color: $bg-hover;
+        color: $color-primary;
+      }
+      &.role-active {
+        color: $color-primary;
+        background-color: $bg-hover;
+      }
+    }
+  }
+}
+
+.user-log-out {
+  color: $color-text-red;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 17px;
+  cursor: pointer;
+  i {
+    margin-right: 5px;
+  }
+}
+.user-log-out:hover {
+  font-weight: bold;
+}
+
+.phone-information {
+  font-size: 12px;
+  font-weight: 500;
+  padding: 0 30px;
+  .icon-phone {
+    font-size: 17px;
+    padding: 0 5px;
+    vertical-align: middle;
+  }
+  .text {
+    letter-spacing: 1px;
+  }
+  .title-role {
+    text-align: left;
+  }
+}
+
+/* ------------------------------------------------------------------------- */
+// THÔNG BÁO SẢN PHẨM QUẢNG CÁO
+/* ------------------------------------------------------------------------- */
+// Style cho header trang người dùng
+.guest-header {
+  display: inline-flex;
+  height: 100px;
+  padding: 0;
+  // Style header left
+  .logo-block {
+    display: inline-flex;
+    @include align-items(center);
+    height: 100%;
+    width: 515px;
+    .logo-image {
+      height: 70px;
+    }
+    .block-title {
+      .title-logo {
+        color: $color-text-white;
+        height: 40px;
+        padding-left: 5px;
+        font-size: 16px;
+        padding-top: 5px;
+        font-weight: normal;
+        text-transform: uppercase;
+      }
+      .title-app {
+        color: $color-text-white;
+        padding-left: 5px;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-family: inherit;
+      }
+    }
+  }
+  // Style header right
+  .nav-menu-block {
+    @include align-items(center);
+    height: 100%;
+    width: calc(100% - 515px);
+    .menu-guest-header {
+      float: right;
+      border: none;
+      margin-top: 25px;
+      height: 50px;
+      .button-menu-header {
+        &:hover {
+          border-color: transparent !important;
+        }
+        .ant-btn {
+          color: $color-text-white;
+          background-color: transparent;
+        }
+      }
+      .user-info-menu-header {
+        &:hover {
+          border-color: transparent !important;
+        }
+      }
+      .text-menu-header {
+        vertical-align: top;
+        color: $color-text-white;
+        text-transform: uppercase;
+      }
+      .info-user-item {
+        .name-user {
+          max-width: 200px;
+          display: inline-block;
+          vertical-align: middle;
+          margin-left: 10px;
+          line-height: 1.5;
+          margin-bottom: 0;
+          color: $color-text-white;
+        }
+      }
+    }
+  }
+  .ant-menu-horizontal > .ant-menu-item:hover {
+    color: $color-text-white;
+    border-bottom: 2px solid $color-text-white;
+  }
+  .ant-menu-item.item-menu-header.ant-menu-item-selected {
+    color: $color-text-white;
+    border-bottom: 2px solid $color-text-white;
+  }
+  .ant-menu-item-selected {
+    border-color: transparent;
+  }
+  .ant-menu-item {
+    padding: 0 10px;
+  }
+
+}

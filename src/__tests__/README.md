@@ -1,0 +1,1 @@
+Thư mục chứa các test scripts trong application

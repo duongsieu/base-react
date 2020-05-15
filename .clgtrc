@@ -1,0 +1,41 @@
+{
+  "file": "CHANGELOG.md",
+  "name": "TBSPQC Front-end",
+  "description": "TBSPQC Front-end - Deployment",
+  "url": "https://bitbucket.org/toancauxanh/svhtt-tbspqc-fe/commits",
+  "types": [
+    {
+      "title": "Bug Fixes",
+      "pattern": "^fix|^bug"
+    },
+    {
+      "title": "Hot Fixes",
+      "pattern": "^hotfix|^hotFix"
+    },
+    {
+      "title": "Features",
+      "pattern": "^feat"
+    },
+    {
+      "title": "Documentation",
+      "pattern": "^docs"
+    },
+    {
+      "title": "Breaking changes",
+      "pattern": "BREAKING"
+    },
+    {
+      "title": "Refactor",
+      "pattern": "^refactor"
+    },
+    {
+      "title": "Style",
+      "pattern": "^style"
+    },
+    {
+      "title": "Test",
+      "pattern": "^test"
+    }
+  ],
+  "ignore": ".*ignore me.*|.*CHANGELOG.md.*|.*ignoreme.*|^chore|^release|^Release|^revert|^Merge pull request|^Merge branch"
+}

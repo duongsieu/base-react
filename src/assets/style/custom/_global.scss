@@ -1,0 +1,591 @@
+/* -------- Global style -------- */
+#root {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body,html {
+  height: 100%;
+}
+body {
+  background-color: #edf2f6;
+  overflow-x: hidden;
+}
+// Class chung
+.hide {
+  display: none;
+}
+.no-shadow {
+  box-shadow: none;
+}
+.d-block {
+  display: block;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.column-25 {
+  float: left;
+  width: 25%;
+}
+.w-0 {
+  width: 0 !important;
+}
+.size18 {
+  font-size: 18px;
+}
+.size24 {
+  font-size: 24px;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+// Font-weight
+.font-family-bold {
+  font-family: $font-family;
+  font-weight: bold;
+}
+// Margin auto
+.ml-auto {
+  margin-left: auto;
+}
+.mr-auto {
+  margin-right: auto;
+}
+.cursor-default {
+  cursor: default;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.w-100 {
+  width: 100%;
+}
+.flex-wrap-nowrap {
+  flex-wrap: nowrap;
+}
+.d-flex {
+  display: flex;
+}
+.d-inline-block {
+  display: inline-block;
+}
+.flex-direction-column {
+  flex-direction: column;
+}
+.border-bottom {
+  border-bottom: 1px solid $color-border;
+}
+.inline-block {
+  display: inline-block !important;
+}
+.pre-line {
+  white-space: pre-line !important;
+}
+.no-wrap {
+  white-space: nowrap;
+}
+.link-underline {
+  span {
+    text-decoration: underline;
+  }
+}
+.text-normal {
+  font-weight: normal;
+}
+.bold {
+  font-weight: 700;
+}
+.hand {
+  cursor: pointer;
+}
+.not-allowed {
+  cursor: not-allowed;
+}
+.italic {
+  font-style: italic;
+}
+.no-border {
+  border: none !important;
+  box-shadow: none !important;
+}
+.image-medium {
+  width: 200px;
+  height: auto;
+}
+.description {
+  font-size: 15px;
+  padding: 10px 0;
+}
+.error-message {
+  margin: 10px 0;
+  color: $color-text-red;
+}
+// Style Layout
+.b-container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 90px auto 0;
+  width: 1300px;
+}
+// Style Loading
+.loading-container {
+  text-align: center;
+  margin-top: 30px;
+  padding: 30px 50px;
+}
+// icon
+.icon-left {
+  padding-right: 10px;
+}
+.icon-small {
+  font-size: 12px;
+}
+.icon-medium {
+  font-size: 18px;
+}
+// ContentWrapper
+.b-normal-wrapper {
+  background-color: $bg-body;
+  border: 1px solid $color-border;
+  @include box-shadow(0, 6px, 16px, 0, rgba(0,0,0,0.06));
+  .heading-wrapper {
+    background-color: $bg-body;
+    line-height: 2;
+    padding: 10px 20px;
+    border-bottom: 1px solid #F4F6F8;
+    .heading-right {
+      text-align: right;
+    }
+  }
+  .body-wrapper {
+    background-color: $bg-body;
+    padding: 20px;
+    // overflow-x: auto;
+  }
+  .footer-wrapper {
+    border-top: 1px solid #F4F6F8;
+    padding: 10px 20px;
+    background-color: rgba(244, 247, 251, 0.5);
+  }
+}
+// Heading search
+.heading-search {
+  width: 100%;
+  display: inline-block;
+  .b-search {
+    text-align: right;
+    display: inline-block;
+    margin-right: 5px;
+  }
+  .heading-search-item {
+    display: inline-block;
+    padding: 0 5px;
+    max-width: 500px;
+  }
+  .ant-input-search-icon {
+    color: $color-text-red;
+    font-weight: 700;
+    font-size: 18px;
+  }
+  .heading3 {
+    line-height: 25px;
+    padding: 15px 0;
+    font-size: 16px;
+  }
+}
+// Tác vụ
+.b-action {
+  .link {
+    font-weight: 500;
+  }
+  .seperator {
+    width: 1px;
+    border-right: 2px solid rgba(0, 0, 0, 0.63);
+  }
+}
+// Tooltip
+.ant-tooltip-inner {
+  background-color: $bg-tooltip !important;
+  padding: 12px 20px !important;
+  box-shadow: 0 6px 16px 0 rgba(0,0,0,0.06);
+  font-family: $font-family;
+  font-weight: 500;
+  font-size: 13px;
+  color: $color-white;
+  letter-spacing: 0;
+  .icon {
+    padding: 10px;
+    &:before {
+      color: $color-white;
+    }
+  }
+}
+.ant-tooltip-arrow {
+  &:before {
+    background-color: $bg-tooltip !important;
+  }
+}
+// Scrollbar
+::-webkit-scrollbar-track {
+  @include box-shadow-inset(0, 0, 6px, rgba(0,0,0,0.3));
+  background-color: #F5F5F5 !important;
+  border-radius: 5px;
+}
+::-webkit-scrollbar {
+  &:horizontal {
+    height: 10px;
+  }
+  &:vertical {
+    width: 10px;
+  }
+  background-color: #F5F5F5 !important;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #bfbfbf !important;
+  border-radius: 5px;
+}
+// Mô tả cho table (tiêu đề, tổng số, ...)
+.description-table {
+  font-size: 13px;
+  color: #292A2D;
+  line-height: 2;
+}
+// pagination
+.right-pagination {
+  text-align: right;
+}
+// NoData, ErrorSystem
+.content-wrapper > .content-notfound{
+  height: 71vh;
+  min-height: 71vh;
+  background-color: $color-white;
+}
+.content-notfound {
+  text-align: center;
+  height:36vh;
+  min-height: 100%;
+  position: relative;
+  .center-block {
+    vertical-align: middle;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: auto;
+    transform: translate(-50%, -50%);
+  }
+  .bg-notdata {
+    max-width: 80px;
+    @include breakpoint(768) {
+      max-width: 60px;
+    }
+  }
+  .heading {
+    font-family: $font-family;
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 20px;
+    color: $color-text;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 1.4;
+    @include breakpoint(768) {
+      font-size: 15px;
+    }
+  }
+}
+.content-notfound.small-no-data {
+  height:25vh;
+  min-height: 100%;
+  &.content-notfound {
+    .bg-notdata {
+      max-width: 80px;
+    }
+    .heading {
+      font-size: 15px;
+      margin-top: 10px;
+    }
+  }
+}
+.content-wrapper > .small-no-data {
+  height:25vh;
+  min-height: 100%;
+  &.content-notfound {
+    .bg-notdata {
+      max-width: 80px;
+    }
+    .heading {
+      font-size: 15px;
+      margin-top: 10px;
+    }
+  }
+}
+// UploadAvatar
+.b-avatar-upload {
+  .b-btn-upload {
+    padding: 20px 30px;
+  }
+}
+// drag & drop
+tr.drop-over-downward td {
+  border-bottom: 2px dashed #1890ff;
+}
+tr.drop-over-upward td {
+  border-top: 2px dashed #1890ff;
+}
+// FileView
+.b-file-view {
+  cursor: pointer;
+}
+// UploadFiles
+.files-upload-block {
+  .decription {
+    font-style: italic;
+    color: gray;
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .btn-upload {
+    margin-right: 10px;
+  }
+  .list-files {
+    max-height: 200px;
+    overflow-y: auto;
+    width: 100%;
+    padding: 0 10px;
+  }
+}
+// Wrapper Search
+.b-search-wrapper {
+  background-color: transparent;
+  margin-bottom: 20px;
+  .body-wrapper {
+    padding: 10px 20px;
+  }
+  .footer-wrapper {
+    text-align: right;
+    background-color: $color-white;
+  }
+}
+// TrangThai
+.box-status {
+  .tag-status {
+    padding: 2px;
+    border-radius: 4px;
+    border: 1px solid $color-border;
+    color: $color-text-black;
+  }
+  .text-status {
+    color: $color-text-black;
+  }
+  .time {
+    color: $color-text-black;
+    margin-top: 5px;
+  }
+  &.done {
+    .tag-status {
+      border: 1px solid $color-success;
+      color: $color-success;
+    }
+    .text-status {
+      color: $color-primary;
+    }
+  }
+  &.progress {
+    .tag-status {
+      border: 1px solid $color-text-red;
+      color: $color-text-red;
+    }
+    .text-status {
+      color: $color-text-red;
+    }
+  }
+}
+// Scroll box - Hiển thị scroll bar khi hover
+.scrollbox {
+  max-width: 100%;
+  max-height: 10em;
+  overflow: auto;
+  visibility: hidden;
+}
+.scrollbox-content,
+.scrollbox:hover,
+.scrollbox:focus {
+  visibility: visible;
+}
+.scrollbox-content {
+  @include flexbox;
+  @include align-items(center);
+  height: 100%;
+  &.large {
+    @include align-items(inherit);
+  }
+}
+.scrollbox-delayed {
+  transition: visibility 0.2s;
+}
+.scrollbox-delayed:hover {
+  transition: visibility 0s 0.2s;
+}
+// ModalPage
+.modal-page {
+  // Style cho form trong modal
+  .modal-form {
+    margin: 0;
+  }
+  .ant-modal-header {
+    padding: 20px;
+  }
+  .modal-page-title {
+    .icon::before,
+    .icon-antd {
+      color: $bg-primary;
+      padding-right: 5px;
+    }
+    .name {
+      padding-left: 0 !important;
+      color: $bg-primary;
+    }
+  }
+}
+// Box trigger (dùng để hiển thị cell có thể trigger trong table)
+.box-trigger-wrapper {
+  display: block;
+  border-radius: 4px;
+  border: 1px solid $color-primary;
+  color: $color-text-black;
+  cursor: pointer;
+  transition: box-shadow .3s;
+  .box-trigger-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    height: 10em;
+    min-width: 75px;
+  }
+  &:hover {
+    @include box-shadow(0, 5px, 11px, 0, rgba(33,33,33,.2));
+  }
+}
+// Select trigger (dùng để hiển thị select box có thể trigger trong table)
+.select-trigger {
+  min-width: 170px !important;
+  .ant-select-selection {
+    @include box-shadow(0, 6px, 16px, 0, rgba(0, 0, 0, 0.06));
+    border-color: $color-primary;
+    &:hover {
+      @include box-shadow(0, 5px, 11px, 0, rgba(33,33,33,.2));
+    }
+  }
+}
+// TreeSelect
+// Style cho các item không được chọn trong tree
+.none-selectable {
+  > .ant-select-tree-node-content-wrapper {
+    .ant-select-tree-title {
+      cursor: not-allowed;
+      opacity: .6;
+    }
+  }
+}
+// Style cho các item không hiển thị checkbox trong tree
+.hidden-checkbox-tree {
+  > .ant-select-tree-checkbox {
+    display: none;
+  }
+}
+// Style cho các item không hiển tị trong tree
+.hidden-node {
+  display: none;
+}
+.tree-dropdown {
+  max-width: 300px;
+  max-height: 400px !important;
+  overflow: auto;
+  .ant-select-tree li .ant-select-tree-node-content-wrapper {
+    width: initial;
+  }
+}
+// Style cho box ngăn cách dùng trong login form
+.separator-box {
+  .solic-line {
+    width: calc((100% - 43px)/2);
+    border-top: 1px solid $color-border-gray;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .text {
+    color: $color-gray;
+    vertical-align: middle;
+    margin: 0 5px;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 2;
+    font-weight: 500;
+  }
+}
+// Switch box
+.switch-box {
+  .text {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0 10px;
+  }
+}
+// Popover
+.popover-content {
+  color: $color-text;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0;
+  .popover-content-item {
+    padding: 10px;
+    text-align: left;
+    cursor: pointer;
+    font-weight: normal;
+    &:hover {
+      color: $color-primary;
+    }
+  }
+  .action-name {
+    font-weight: 400;
+  }
+}
+// reCAPTCHA
+.recaptcha-box {
+  height: 100%;
+  width: 100%;
+  .content {
+    display: inline-block;
+  }
+}
+// Descriptions trong form
+.form-descriptions {
+  .ant-descriptions-item-label {
+    font-weight: 500;
+  }
+}
+/* ------------------------------------------------------------------------- */
+// Collapse
+/* ------------------------------------------------------------------------- */
+.collapse-form {
+  .ant-collapse-content > .ant-collapse-content-box {
+    padding: 20px;
+  }
+  .ant-collapse-icon-position-right > .ant-collapse-item > .ant-collapse-header {
+    padding: 10px;
+  }
+  .heading2 {
+    padding: 10px;
+    border-bottom: 1px solid #F4F6F8;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+}

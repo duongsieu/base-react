@@ -1,0 +1,234 @@
+// add font roboto full
+@font-face {
+  font-family: 'Roboto';
+  src:  url('../fonts/family/Roboto-BoldItalic.eot');
+  src:  url('../fonts/family/Roboto-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/family/Roboto-BoldItalic.woff2') format('woff2'),
+        url('../fonts/family/Roboto-BoldItalic.woff') format('woff'),
+        url('../fonts/family/Roboto-BoldItalic.ttf') format('truetype'),
+        url('../fonts/family/Roboto-BoldItalic.svg#Roboto-BoldItalic') format('svg');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src:  url('../fonts/family/Roboto-Light.eot');
+  src:  url('../fonts/family/Roboto-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/family/Roboto-Light.woff2') format('woff2'),
+        url('../fonts/family/Roboto-Light.woff') format('woff'),
+        url('../fonts/family/Roboto-Light.ttf') format('truetype'),
+        url('../fonts/family/Roboto-Light.svg#Roboto-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src:  url('../fonts/family/Roboto-Bold.eot');
+  src:  url('../fonts/family/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/family/Roboto-Bold.woff2') format('woff2'),
+        url('../fonts/family/Roboto-Bold.woff') format('woff'),
+        url('../fonts/family/Roboto-Bold.ttf') format('truetype'),
+        url('../fonts/family/Roboto-Bold.svg#Roboto-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src:  url('../fonts/family/Roboto-Medium.eot');
+  src:  url('../fonts/family/Roboto-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/family/Roboto-Medium.woff2') format('woff2'),
+        url('../fonts/family/Roboto-Medium.woff') format('woff'),
+        url('../fonts/family/Roboto-Medium.ttf') format('truetype'),
+        url('../fonts/family/Roboto-Medium.svg#Roboto-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src:  url('../fonts/family/Roboto-Regular.eot');
+  src:  url('../fonts/family/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/family/Roboto-Regular.woff2') format('woff2'),
+        url('../fonts/family/Roboto-Regular.woff') format('woff'),
+        url('../fonts/family/Roboto-Regular.ttf') format('truetype'),
+        url('../fonts/family/Roboto-Regular.svg#Roboto-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src:  url('../fonts/family/Roboto-Italic.eot');
+  src:  url('../fonts/family/Roboto-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/family/Roboto-Italic.woff2') format('woff2'),
+        url('../fonts/family/Roboto-Italic.woff') format('woff'),
+        url('../fonts/family/Roboto-Italic.ttf') format('truetype'),
+        url('../fonts/family/Roboto-Italic.svg#Roboto-Italic') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
+
+// end font roboto
+
+// add font UTMAvo
+@font-face {
+  font-family: 'UTMAvo';
+  src:  url('../fonts/family/UTMAvoBold.eot');
+  src:  url('../fonts/family/UTMAvoBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/family/UTMAvoBold.woff2') format('woff2'),
+        url('../fonts/family/UTMAvoBold.woff') format('woff'),
+        url('../fonts/family/UTMAvoBold.ttf') format('truetype'),
+        url('../fonts/family/UTMAvoBold.svg#UTMAvoBold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+// end font roboto
+// add icon
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon/icomoon.eot?rord3b');
+  src:  url('../fonts/icomoon/icomoon.eot?rord3b#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon/icomoon.ttf?rord3b') format('truetype'),
+    url('../fonts/icomoon/icomoon.woff?rord3b') format('woff'),
+    url('../fonts/icomoon/icomoon.svg?rord3b#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-xem-dang-bieu-do:before {
+  content: "\e900";
+  color: #fff;
+}
+.icon-tim-kiem:before {
+  content: "\e901";
+  color: #fff;
+}
+.icon-xoa:before {
+  content: "\e902";
+  color: #5c6376;
+}
+.icon-tien-do-du-an:before {
+  content: "\e903";
+}
+.icon-tai-xuong-2:before {
+  content: "\e904";
+  color: #5c6376;
+}
+.icon-thong-tin-nguoi-dung:before {
+  content: "\e905";
+  color: #5c6376;
+}
+.icon-thong-tin-du-an:before {
+  content: "\e906";
+}
+.icon-them-moi:before {
+  content: "\e907";
+  color: #fff;
+}
+.icon-phone:before {
+  content: "\e908";
+  color: #ffc551;
+}
+.icon-tai-xuong:before {
+  content: "\e909";
+}
+.icon-quan-ly-danh-muc:before {
+  content: "\e90a";
+  color: #5c6376;
+}
+.icon-quan-ly-thong-tin:before {
+  content: "\e90b";
+  color: #5c6376;
+}
+.icon-quan-ly-du-an:before {
+  content: "\e90c";
+  color: #5c6376;
+}
+.icon-quan-tri-he-thong:before {
+  content: "\e90d";
+  color: #5c6376;
+}
+.icon-tim-kiem-lai:before {
+  content: "\e90e";
+  color: #5c6376;
+}
+.icon-tao-moi-bao-cao:before {
+  content: "\e90f";
+}
+.icon-quan-ly-van-ban:before {
+  content: "\e910";
+  color: #5c6376;
+}
+.icon-thong-ke-bao-cao:before {
+  content: "\e911";
+  color: #5c6376;
+}
+.icon-menu:before {
+  content: "\e912";
+  color: #fff;
+}
+.icon-quan-ly-tien-do-du-an:before {
+  content: "\e913";
+  color: #5c6376;
+}
+.icon-phe-duyet-tai-lieu:before {
+  content: "\e914";
+  color: #5c6376;
+}
+.icon-luu:before {
+  content: "\e915";
+  color: #fff;
+}
+.icon-chon-thoi-gian-bao-cao:before {
+  content: "\e916";
+  color: #5c6376;
+}
+.icon-date:before {
+  content: "\e917";
+}
+.icon-in:before {
+  content: "\e918";
+  color: #f4f7fb;
+}
+.icon-arrow:before {
+  content: "\e919";
+  color: #5c6376;
+}
+.icon-chon:before {
+  content: "\e91a";
+  color: #fff;
+}
+.icon-chon-tai-lieu:before {
+  content: "\e91b";
+  color: #5c6376;
+}
+.icon-cap-nhat:before {
+  content: "\e91c";
+  color: #fff;
+}
+.icon-huy:before {
+  content: "\e91d";
+  color: #5c6376;
+}
+.icon-arrow-fill:before {
+  content: "\e91e";
+  color: #0065c7;
+}

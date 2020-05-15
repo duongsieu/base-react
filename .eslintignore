@@ -1,0 +1,9 @@
+/coverage
+/node_modules/
+/vscode
+/.nyc_output
+/tsconfig.json
+/src/serviceWorker.js
+/public/icomoon
+/jsconfig.json
+/build

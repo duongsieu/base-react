@@ -1,0 +1,125 @@
+/* -------- GLobal style responsive -------- */
+@media (min-width: 540px) {
+  .b-container {
+    max-width: 600px;
+  }
+}
+@media (min-width: 800px) {
+  .b-container {
+    max-width: 680px;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    max-width: 900px;
+  }
+}
+@media (min-width: 1199px) {
+  .b-container {
+    max-width: 1110px;
+  }
+}
+@media (min-width: 1400px) {
+  .b-container {
+    max-width: 1300px;
+  }
+}
+
+@include breakpoint($grid-breakpoints-sm) {
+  // Content trong master layout
+  .wrapper-content-right {
+    margin-left: 0;
+  }
+  // Layout container
+  .layout-container {
+    &.closed-sidebar {
+      .fixed-header {
+        width: 100%;
+      }
+      .wrapper-content-right {
+        margin-left: 0;
+      }
+    }
+  }
+  .heading-search-item {
+    max-width: 100% !important;
+  }
+  .heading-right {
+    text-align: left !important;
+  }
+  // UploadAvatar
+  .b-avatar-upload {
+    .ant-avatar {
+      display: block;
+    }
+    .b-btn-upload {
+      padding: 20px 0;
+    }
+  }
+  // pagination
+  .right-pagination {
+    text-align: left;
+    margin-top: 10px;
+  }
+  // heading tab
+  .heading-tab {
+    .heading-tab-item {
+      padding: 5px;
+    }
+    .heading-tab-seperator {
+      width: 10px;
+    }
+  }
+  .btn-left {
+    margin-bottom: 10px;
+  }
+}
+
+@include breakpoint($grid-breakpoints-md) {
+  .content-notfound {
+    height: auto;
+    min-height: auto;
+    padding: 70px 0;
+    .center-block {
+      position: relative;
+      left: unset;
+      top: unset;
+      transform: none;
+    }
+  }
+}
+
+@include breakpoint($grid-breakpoints-mxl) {
+  .heading-search {
+    &.multiple {
+      .input-large {
+        width: 250px;
+      }
+    }
+  }
+}
+
+@include breakpoint($grid-breakpoints-mlg) {
+  // Content trong master layout
+  .wrapper-content-right {
+    margin-left: 80px;
+  }
+  // Box search bên phải ở các danh sách
+  .heading-right {
+    .heading-search {
+      .heading-search-item {
+        display: inline-block;
+        padding-left: 0;
+      }
+      .heading-search-item {
+        width: 100%;
+        padding: 5px 0;
+      }
+      .b-search {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 5px;
+      }
+    }
+  }
+}

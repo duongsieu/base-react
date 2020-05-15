@@ -1,0 +1,1 @@
+This folder contains all middlewares in application

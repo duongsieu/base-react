@@ -1,0 +1,104 @@
+/* -------- Style about sidebar -------- */
+.sidebar-container {
+  z-index: 4;
+  transition: all 0.1s ease-in-out;
+  &.fixed-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    @include breakpoint($grid-breakpoints-mlg) {
+      z-index: 6;
+      box-shadow: 1px 1px 7px -2px rgba(0,0,0,0.75);
+      &.ant-layout-sider-collapsed {
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+.list-menu-sidebar {
+  height: calc(100vh - 53px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  .icon {
+    padding: 10px;
+    min-width: 14px;
+    font-size: 14px;
+    transition: font-size 0.15s cubic-bezier(0.215, 0.61, 0.355, 1), margin 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    &.icon-antd {
+      margin: 0;
+      color: #b0c1dd;
+    }
+    &+ span {
+      opacity: 1;
+      transition: opacity 0.3s cubic-bezier(0.645, 0.045, 0.355, 1), width 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    }
+    &::before {
+      color: #b0c1dd;
+    }
+  }
+  &.ant-menu-dark {
+    background-color: #1D4D9D !important;
+    .ant-menu-sub {
+      box-shadow: none;
+      background-color: #1D4D9D !important;
+      // Canh bằng nhau giữa tiêu đề của menu group và menu con
+      .ant-menu-item {
+        padding-left: 58px !important;
+      }
+    }
+  }
+  // Trường hợp collapsed menu
+  &.ant-menu-inline-collapsed {
+    .ant-menu-item,
+    .ant-menu-submenu-title {
+      .icon {
+        margin: 0;
+        font-size: 16px;
+        line-height: 40px;
+        margin-right: 25px;
+        padding: 0;
+      }
+    }
+    &> .ant-menu-item {
+      padding: 0 20px !important;
+    }
+    &> .ant-menu-submenu {
+      margin: 0;
+      &> .ant-menu-submenu-title {
+        padding: 0 20px !important;
+      }
+    }
+    .ant-menu-item {
+      border-left: 0;
+    }
+  }
+  // Menu cấp 1 được chọn
+  .ant-menu-item-selected {
+    background-color: #0B3D91 !important;
+    // Icon menu
+    .icon {
+      &.icon-antd {
+        color: $color-white;
+      }
+      &::before {
+        color: $color-white;
+      }
+    }
+  }
+  // Menu cấp 2 có con được chọn
+  .ant-menu-submenu-selected {
+    // Tiêu đề của sub menu
+    .ant-menu-submenu-title {
+      .icon {
+        &.icon-antd {
+          color: $color-white;
+        }
+        &::before {
+          color: $color-white;
+        }
+      }
+    }
+  }
+}

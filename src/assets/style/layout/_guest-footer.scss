@@ -1,0 +1,17 @@
+/* -------- Style about footer -------- */
+/* ------------------------------------------------------------------------- */
+// THÔNG BÁO SẢN PHẨM QUẢNG CÁO
+/* ------------------------------------------------------------------------- */
+// Footer cho GuestLayout
+.guest-footer {
+  display: block;
+  height: auto;
+  color: $color-text-white;
+  align-items: center;
+  .footer-title {
+    color: $color-text-white;
+    @include breakpoint($grid-breakpoints-md) {
+      font-size: 25px;
+    }
+  }
+}

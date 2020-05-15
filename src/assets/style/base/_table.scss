@@ -1,0 +1,112 @@
+/* -------- Style about table -------- */
+.table-wrapper-custom {
+  overflow: auto !important;
+  &.table-wrapper-nopadding {
+    padding: 0px
+  }
+  &.has-on-row {
+    cursor: pointer;
+  }
+  .ant-table table {
+    border-radius: 0;
+  }
+  &:not(.default-column-size) {
+    .ant-table-thead > tr > th {
+      padding: 10px;
+      line-height: 1.5;
+    }
+    .ant-table-tbody > tr > td {
+      padding: 5px 10px;
+      line-height: 2;
+    }
+  }
+  // Trường hợp bảng có màu nền
+  &.has-background-header {
+    .ant-table-thead > tr > th {
+      background-color: $color-primary;
+      color: $color-white;
+    }
+  }
+}
+.ant-table-body-outer {
+  margin-bottom: 0;
+}
+.table-and-form {
+  .ant-form-item {
+    margin-bottom: 0px!important
+  }
+}
+// Table group
+.table-group {
+  .cell {
+    height: 40px;
+    padding: 5px 10px;
+    line-height: 2;
+    text-align: left;
+    &.center {
+      text-align: center;
+    }
+  }
+  .cell-group {
+    font-weight: 500;
+    display: block;
+  }
+  .cell-background {
+    background-color: aliceblue;
+  }
+  .row-parent {
+    background-color: aliceblue;
+    font-weight: 500;
+  }
+  &.no-hover {
+    tr {
+      &:hover {
+        td {
+          background: initial !important;
+        }
+      }
+    }
+  }
+}
+// Style cho table edit
+.edit-table {
+  .editable-cell {
+    position: relative;
+  }
+  .editable-cell-value-wrap {
+    padding: 5px 12px;
+    cursor: pointer;
+    height: 36px;
+    font-weight: normal;
+  }
+  .editable-row {
+    &:hover {
+      .editable-cell-value-wrap {
+        border: 1px solid #d9d9d9;
+        border-radius: 4px;
+        padding: 4px 11px;
+      }
+    }
+  }
+  .top-column {
+    vertical-align: top;
+  }
+  .ant-input-number {
+    width: 100%;
+  }
+  .ant-select {
+    width: 100%;
+  }
+}
+// Style cho table không có border
+.table-no-border {
+  .ant-table-small {
+    border: none;
+  }
+  .no-boder {
+    border: none;
+    th, td {
+      border: none;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+/* -------- Login style responsive -------- */
+@include breakpoint($grid-breakpoints-sm) {
+  .auth-layout-container {
+    .logo-heading {
+      margin-top: 25px;
+    }
+    .dangnhap-form {
+      padding: 30px;
+    }
+  }
+}

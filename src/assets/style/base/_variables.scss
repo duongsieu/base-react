@@ -1,0 +1,77 @@
+// ----------------------------------------------------------------------
+// Grid Breakpoint
+// ----------------------------------------------------------------------
+$grid-breakpoints-xs: 0;
+$grid-breakpoints-sm: 575;
+$grid-breakpoints-md: 767;
+$grid-breakpoints-lg: 991;
+$grid-breakpoints-mlg: 1199;
+$grid-breakpoints-xl: 1280;
+$grid-breakpoints-mxl: 1440;
+
+// ----------------------------------------------------------------------
+// color
+// ----------------------------------------------------------------------
+$color-primary: #0275D8;
+$color-success: #28A745;
+$color-required: #d5313d;
+$color-text: #333;
+$color-icon: #626262;
+$color-hover: #0275D8;
+$color-white: #fff;
+$color-black: #000;
+$color-border: #e8e8e8;
+$color-label: #3A3C41;
+$color-border-input: #d9d9d9;
+$color-name-unit: #3A3C41;
+$color-breadcrumb: #5c7080;
+$color-border-gray: #CFCFCF;
+$color-note: #828487;
+$color-border-box: #E2E2E2;
+$color-icon2: #B0B0B0;
+$color-icon3: #9B9B9B;
+$color-star: #F0CF26;
+$color-gray: #C4C8D1;
+$color-body-main: #f0f2f5;
+/* -------- Variables -------- */
+$color-border-editor: #F1F1F1;
+$color-text-white: #fff;
+$color-text-black: #000;
+$color-text-red: #d5313d;
+$color-border-button-default: #d9d9d9;
+$color-text-search: #6bc779;
+$color-upcoming: #F9A204;
+$color-green: #28A745;
+$color-orange: #F9A204;
+$color-number-date: rgba(0, 0, 0, 0.65);
+$color-border-item: #D3DCE5;
+$color-light-blue: rgb(22, 125, 214);
+$color-ecstasy: #F36716;
+$color-purple: purple;
+// ----------------------------------------------------------------------
+// Background
+// ----------------------------------------------------------------------
+$bg-gray: #F7F7F7;
+$bg-body: #fff;
+$bg-table: #F5F5F5;
+$bg-editor: #3A3C41;
+$bg-hover: #fff;
+$bg-upcoming: rgba(255, 185, 58, 0.2);
+$bg-required: rgba(251, 97, 108, 0.2);
+$bg-green-opacity: #DFF2E3;
+$bg-orange-opacity: #fff0d5;
+$bg-blue-opacity: rgba(14, 90, 206, 0.2);
+$bg-primary: #0053A7;
+$bg-pink: #ff3399;
+$bg-success: #28A745;
+$bg-tooltip: rgb(121, 121, 121);
+$bg-red: #d5313d;
+// ----------------------------------------------------------------------
+// Font-family
+// ----------------------------------------------------------------------
+$font-family: 'Roboto', sans-serif;
+$font-icon: 'icomoon';
+// ----------------------------------------------------------------------
+// Border
+// ----------------------------------------------------------------------
+$border-primary: 1px solid $color-border;

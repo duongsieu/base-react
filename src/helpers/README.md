@@ -1,0 +1,1 @@
+Thư mục chưa các helper functions được sử dụng trong application

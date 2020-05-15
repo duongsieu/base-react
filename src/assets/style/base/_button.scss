@@ -1,0 +1,168 @@
+/* -------- Style button -------- */
+.ant-btn {
+  &:not(.ant-btn-link) {
+    height: 36px;
+  }
+  &:hover, &:active, &:focus {
+    &:not(.ant-btn-link) {
+      border-color: #d9d9d9;
+      opacity: 0.8;
+    }
+    &.ant-btn-link {
+      &:not(:disabled) {
+        color: initial;
+        &.color-blue {
+          color: $color-primary;
+        }
+        &.color-red {
+          color: $color-text-red;
+        }
+        &.color-green {
+          color: $color-green;
+        }
+      }
+    }
+  }
+}
+.btn-normal {
+  min-width: 90px;
+  font-size: 12px;
+  font-weight: 500;
+  border-color: #d9d9d9;
+  &.red-outline {
+    color: $color-text-red;
+    border-color: $bg-red;
+    &:hover, &:active, &:focus {
+      border-color: $bg-red;
+    }
+  }
+  &.blue-outline {
+    color: $color-primary;
+    border-color: $bg-primary;
+    &:hover, &:active, &:focus {
+      border-color: $bg-primary;
+    }
+  }
+  &.blue {
+    color: $color-white;
+    background-color: $bg-primary;
+    border: none;
+    &:hover, &:active, &:focus {
+      background-color: $bg-primary;
+      color: $color-white;
+    }
+  }
+  &.light-blue {
+    color: $color-white;
+    background-color: $color-light-blue;
+    border: none;
+    &:hover, &:active, &:focus {
+      background-color: $color-light-blue;
+      color: $color-white;
+    }
+  }
+  &.green {
+    color: $color-white;
+    background-color: $color-green;
+    border: none;
+    &:hover, &:active, &:focus {
+      background-color: $color-green;
+      color: $color-white;
+    }
+  }
+  &.orange {
+    color: $color-white;
+    background-color: $color-orange;
+    border: none;
+    &:hover, &:active, &:focus {
+      background-color: $color-orange;
+      color: $color-white;
+    }
+  }
+  &.ecstasy {
+    color: $color-white;
+    background-color: $color-ecstasy;
+    border: none;
+    &:hover, &:active, &:focus {
+      background-color: $color-ecstasy;
+      color: $color-white;
+    }
+  }
+  &.purple-outline {
+    color: $color-purple;
+    border-color: $color-purple;
+    &:hover, &:active, &:focus {
+      border-color: $color-purple;
+    }
+  }
+}
+.btn-uppercase {
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.btn-cancel {
+  background-color: $bg-gray;
+  &:hover, &:active, &:focus {
+    background-color: $bg-gray;
+    color: #5c6376;
+  }
+  &.ant-btn[disabled] {
+    background-color: $bg-gray;
+    color: #5c6376;
+  }
+}
+.btn-primary {
+  background-color: $bg-primary;
+  color: $color-white;
+  &:hover, &:active, &:focus {
+    background-color: $bg-primary;
+    color: $color-white;
+  }
+}
+.btn-submit {
+  color: $color-white;
+  background-color: $color-primary;
+  border: none;
+  &:hover, &:active, &:focus {
+    background-color: $color-primary;
+    color: $color-white;
+  }
+}
+.btn-submit-group {
+  text-align: center;
+  .btn-normal {
+    padding: 0 10px;
+  }
+}
+.content-btn {
+  display: inline-block;
+  .name {
+    padding-left: 5px;
+    font-family: $font-family;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  .icon {
+    font-size: 13px;
+    vertical-align: middle;
+  }
+  .icon-antd {
+    font-size: 15px;
+    vertical-align: middle;
+  }
+}
+.btn-upload {
+  background-color: #f5f5f5;
+  &:hover, &:active, &:focus {
+    background-color: #f5f5f5;
+    color: $color-black;
+  }
+}
+.btn-loading {
+  cursor: default;
+  opacity: 0.8;
+}
+.btn-left {
+  margin-right: 10px;
+}

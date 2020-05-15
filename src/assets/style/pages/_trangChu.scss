@@ -1,0 +1,125 @@
+/* -------- Style của trang chủ -------- */
+.trangchu-page {
+  .list-documents {
+    .body-wrapper {
+      padding: 10px 20px;
+    }
+  }
+  .wrapper-application {
+    width: 264px;
+    margin: 10px 20px;
+  }
+  .b-application {
+    width: 252px;
+    height: 385px;
+    .img {
+      margin: 0;
+      border-radius: 2px 2px 0 0;
+      border: 0;
+      &.default {
+        color: $color-white;
+        background-color: $color-primary;
+      }
+      .ant-avatar-string {
+        font-size: 50px;
+      }
+    }
+    .text {
+      line-height: 2;
+      font-weight: 500;
+      text-align: center;
+      vertical-align: middle;
+      color: $color-primary;
+      width: 100%;
+      height: 90px;
+    }
+  }
+  .card-content {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    .tailieu-text {
+      height: 50px;
+    }
+  }
+  .taiLieu-card {
+    min-height: 370px;
+    width: 100%;
+    .ant-card-body {
+      height: 100%;
+    }
+  }
+}
+/* ------------------------------------------------------------------------- */
+// THÔNG BÁO SẢN PHẨM QUẢNG CÁO
+/* ------------------------------------------------------------------------- */
+// Style cho cho trang thông tin
+.trangthongtin-page {
+  .banner {
+    padding: 50px 100px;
+    @include inline-flex();
+    @include align-items(center);
+    height: 50% !important;
+    background-image: url("./images/thong-tin-background.png");
+    background-size: cover;
+    .banner-info {
+      @include align-items(center);
+      .title {
+        font-weight: normal;
+        color: $color-white;
+        font-size: 40px;
+      }
+    }
+  }
+  .main-content {
+    padding: 50px 100px;
+    .tile-block {
+      border-bottom: 1px solid $color-black;
+    }
+  }
+  .banner-image {
+    @include align-items(center);
+    float: right;
+    width: 650px;
+  }
+}
+
+// Style cho cho trang hướng dẫn sử dụng
+.huongdansudung-page {
+  background-color: $color-white;
+  padding: 50px 100px;
+  .main-title {
+    .title-content {
+      padding: 0 !important;
+    }
+  }
+}
+
+// Style trang mẫu văn bản báo cáo
+.mauvanban-page {
+  background-color: $color-white;
+  .main-content {
+    padding: 40px 100px;
+    .tile-block {
+      border-bottom: 1px solid $color-black;
+    }
+    .content-block {
+      margin-top: 30px;
+      .mauvanban-list {
+        height: 280px;
+        overflow-y: auto;
+      }
+      .mauvanban-item {
+        width: 100%;
+        margin: 10px 0;
+        background-color: $color-border-editor;
+        padding: 10px 5px;
+        .content-item {
+          width: calc(100% - 35px);
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
+
